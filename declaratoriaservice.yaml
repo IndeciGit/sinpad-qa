@@ -1,0 +1,8 @@
+---
+- hosts: Bastions_Servers
+  become: false
+  tasks:
+    - name: Desplegando el servicio
+      shell: |
+        echo "Desplegando Declaratoria Service"
+        /opt/sinpad/qa/scripts/deploydeeservice.sh
